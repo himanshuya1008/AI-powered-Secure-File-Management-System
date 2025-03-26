@@ -265,6 +265,17 @@ auth_frame1.pack(pady=10)
 encrypt_button = tk.Button(auth_frame1, text="Encrypt File", command=encrypt_file, font=("Arial", 18), bg="#FFC107", fg="white")
 encrypt_button.grid(row=0, column=0, padx=(15),pady=15)
 
+decrypt_button = tk.Button(auth_frame1, text="Decrypt File", command=decrypt_file, font=("Arial", 18), bg="#FF9800", fg="white")
+decrypt_button.grid(row=0, column=1, padx=(15),pady=15)
+
+delete_button = tk.Button(auth_frame1, text="Delete File", command=delete_file, font=("Arial", 18), bg="#F44336", fg="white")
+delete_button.grid(row=1, column=0, padx=(15),pady=15)
+
+rename_button = tk.Button(auth_frame1, text="Rename File", command=rename_file, font=("Arial", 18), bg="#9C27B0", fg="white")
+rename_button.grid(row=1, column=1, padx=(15),pady=15)
+
+metadata_button = tk.Button(root, text="File Metadata", command=show_file_metadata, font=("Arial", 18), bg="#FF9800", fg="white")
+metadata_button.pack(pady=5)
 
 
 root.mainloop()
